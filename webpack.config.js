@@ -17,9 +17,17 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg|jpeg)$/i,
+        test: /\.(jpg|jpeg|png)$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.html$/i,
+        use: "html-loader",
       },
     ],
   },
+  devServer: {
+    watchFiles: ["./src/template.html"],
+  },
+  devtool: "eval-source-map",
 }
