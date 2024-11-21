@@ -16,16 +16,6 @@ function initialPageLoad() {
   menuBtn.classList.add("menu");
   navbar.appendChild(menuBtn);
 
-  const contactBtn = document.createElement("button");
-  contactBtn.innerText = "Contact";
-  contactBtn.classList.add("contact");
-  navbar.appendChild(contactBtn);
-
-  const profileBtn = document.createElement("button");
-  profileBtn.innerText = "Profile";
-  profileBtn.classList.add("profile");
-  navbar.appendChild(profileBtn);
-
 
   // Add h1
   const h1 = document.createElement("h1")
